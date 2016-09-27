@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Firework</title>
+	<link rel="icon" type="image/gif" href="icon.png">
+	<style>
+		body {
+		    background-color: #000000;
+		    margin: 0px;
+		    overflow: hidden;
+		    width: 100%;
+		    height: 100%;
+		    float: both;
+		}
+		.image {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.15);
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 100;
+		}
+		img {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			  /* bring your own prefixes */
+			transform: translate(-50%, -50%);
+  			height: 50%;
+		}
+		.text {
+				width: 90%;
+			    font: Cinzel,serif;
+			    font-style: normal;
+			    font-variant-ligatures: normal;
+			    font-variant-caps: normal;
+			    font-variant-numeric: normal;
+			    font-weight: 400;
+			    font-stretch: normal;
+			    font-size: 50px;
+			    line-height: normal;
+			    font-family: Cinzel, serif;
+			    font-weight: 400;
+			    letter-spacing: .35em;
+			    text-shadow: 0 0 25px rgba(254,254,255,.85);
+			    color: #fefeff;
+			    position: fixed;
+				top: 75%;
+				left: 10%;
+		}
+	</style>
+</head>
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false' onselectstart='return false' style='-moz-user-select: none; cursor: default;' ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+	<audio src="Happy Birthday.mp3" style="visibility: hidden;height: 0; width: 0; line-height: 0" type="audio/ogg" id="main_song"></audio>
+	<div id="audio"></div>
+	<div class="image">
+		<img src="cuong-chicky.png" alt="">
+		<span class="text">Happy Birthday Cuong Chicky</span>
+	</div>
+</body>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="firework.js"></script>
+</html>
